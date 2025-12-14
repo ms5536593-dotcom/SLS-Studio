@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,66 +7,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #fff;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    .box {
-      max-width: 600px;
-      margin: auto;
-      background: #1c1c1c;
-      padding: 30px;
-      border-radius: 10px;
+      background:#0f0f0f;
+      color:#fff;
+      font-family:Arial, sans-serif;
+      margin:0;
+      padding:20px;
     }
     h1 {
-      color: #ff3b3b;
+      text-align:center;
+      color:#ff3b3b;
     }
-    p {
-      line-height: 1.6;
+    .warning {
+      background:#1c1c1c;
+      border-left:5px solid #ff3b3b;
+      padding:15px;
+      margin-bottom:25px;
+      font-size:14px;
     }
-    button {
-      margin-top: 20px;
-      padding: 12px 25px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      background: #ff3b3b;
-      color: #fff;
-      cursor: pointer;
+    .games {
+      display:grid;
+      grid-template-columns:1fr;
+      gap:20px;
+      max-width:900px;
+      margin:auto;
     }
-    button:hover {
-      background: #ff1f1f;
+    .game {
+      background:#1c1c1c;
+      padding:15px;
+      border-radius:10px;
+    }
+    .game h2 {
+      margin:0;
+      color:#ff3b3b;
+    }
+    .tags span {
+      display:inline-block;
+      background:#333;
+      padding:5px 8px;
+      border-radius:5px;
+      margin:5px 5px 0 0;
+      font-size:13px;
+    }
+    .btn {
+      display:inline-block;
+      margin-top:15px;
+      padding:10px 16px;
+      background:#ff3b3b;
+      color:#fff;
+      text-decoration:none;
+      border-radius:5px;
+      font-size:14px;
+    }
+    footer {
+      text-align:center;
+      margin-top:40px;
+      font-size:13px;
+      color:#aaa;
     }
   </style>
 </head>
 <body>
 
-  <div class="box">
-    <h1>⚠️ AVISO +18</h1>
-    <p>
-      Este site contém <strong>jogos com conteúdo adulto</strong>, destinados
-      exclusivamente para maiores de 18 anos.
-    </p>
-    <p>
-      Ao continuar, você declara que:
-    </p>
-    <p>
-      ✔️ Possui 18 anos ou mais<br>
-      ✔️ Está ciente do conteúdo adulto<br>
-      ✔️ Acessa por vontade própria
-    </p>
+<h1>🎮 SLS Studio — Jogos +18</h1>
 
-    <button onclick="entrar()">Sou maior de 18 anos</button>
+<div class="warning">
+  ⚠️ <strong>Aviso:</strong> Este site contém jogos com conteúdo adulto.
+  Apenas para maiores de 18 anos.
+</div>
+
+<div class="games">
+
+  <!-- JOGO 1 -->
+  <div class="game">
+    <h2>Blairewood</h2>
+    <p>Jogo adulto focado em narrativa e escolhas.</p>
+
+    <div class="tags">
+      <span>+18</span>
+      <span>Protagonista Masculino</span>
+      <span>Português</span>
+    </div>
+
+    <a class="btn" href="blairewood.html">
+      Ver jogo
+    </a>
   </div>
 
-  <script>
-    function entrar() {
-      alert("Bem-vindo ao site da SLS Studio!");
-    }
-  </script>
+  <!-- PRÓXIMOS JOGOS ENTRAM AQUI -->
+
+</div>
+
+<footer>
+  Desenvolvedor: Matheus — <strong>SLS Studio</strong><br>
+  © 2025 — Todos os direitos reservados
+</footer>
 
 </body>
 </html>
