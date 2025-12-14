@@ -1,30 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>SLS Studio – Jogos +18</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>SLS Studio — Jogos +18</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .box {
+      max-width: 600px;
+      margin: auto;
+      background: #1c1c1c;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    h1 {
+      color: #ff3b3b;
+    }
+    p {
+      line-height: 1.6;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background: #ff3b3b;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff1f1f;
+    }
+  </style>
 </head>
+<body>
 
-<body class="center">
+  <div class="box">
+    <h1>⚠️ AVISO +18</h1>
+    <p>
+      Este site contém <strong>jogos com conteúdo adulto</strong>, destinados
+      exclusivamente para maiores de 18 anos.
+    </p>
+    <p>
+      Ao continuar, você declara que:
+    </p>
+    <p>
+      ✔️ Possui 18 anos ou mais<br>
+      ✔️ Está ciente do conteúdo adulto<br>
+      ✔️ Acessa por vontade própria
+    </p>
 
-<h1>🔞 AVISO DE CONTEÚDO ADULTO</h1>
+    <button onclick="entrar()">Sou maior de 18 anos</button>
+  </div>
 
-<p>
-Este site contém jogos com conteúdo adulto, incluindo nudez,
-sexualidade explícita e temas exclusivos para maiores de 18 anos.
-</p>
-
-<p>
-Ao continuar, você declara ter 18 anos ou mais.
-</p>
-
-<a class="botao" href="jogos.html">TENHO 18 ANOS – ENTRAR</a>
-
-<footer>
-© 2025 – Matheus | SLS Studio
-</footer>
+  <script>
+    function entrar() {
+      alert("Bem-vindo ao site da SLS Studio!");
+    }
+  </script>
 
 </body>
 </html>
