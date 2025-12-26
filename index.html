@@ -1,67 +1,218 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Aviso +18 — SLS Studio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background:#0f0f0f;
-      color:#fff;
-      font-family:Arial;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      height:100vh;
-      margin:0;
-    }
-    .box {
-      background:#1c1c1c;
-      padding:30px;
-      max-width:500px;
-      text-align:center;
-      border-radius:10px;
-    }
-    h1 { color:#ff3b3b; }
-    button {
-      margin-top:20px;
-      padding:12px 20px;
-      border:none;
-      border-radius:5px;
-      font-size:16px;
-      cursor:pointer;
-    }
-    .enter {
-      background:#ff3b3b;
-      color:#fff;
-    }
-    .exit {
-      background:#444;
-      color:#fff;
-      margin-left:10px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>SLS Studio — Jogos +18</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#0f0f0f;
+  color:#fff;
+}
+
+/* TOPO */
+header {
+  background:#111;
+  padding:15px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:2px solid #ff3b3b;
+}
+
+header h1 {
+  color:#ff3b3b;
+  margin:0;
+  font-size:22px;
+}
+
+nav a {
+  color:#fff;
+  margin-left:15px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* BANNER */
+.banner {
+  background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+  url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+  background-size:cover;
+  padding:60px 20px;
+  text-align:center;
+}
+
+.banner h2 {
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.banner p {
+  color:#ccc;
+  margin-bottom:30px;
+}
+
+/* BUSCA */
+.search-box {
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.search-box select,
+.search-box input {
+  padding:12px;
+  border-radius:5px;
+  border:none;
+  width:200px;
+}
+
+.search-box button {
+  padding:12px 20px;
+  background:#ff3b3b;
+  color:#fff;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+/* CATEGORIAS */
+.categories {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  margin:40px 0;
+}
+
+.category {
+  background:#1c1c1c;
+  padding:15px 25px;
+  border-radius:8px;
+  cursor:pointer;
+  border:1px solid #333;
+}
+
+/* SEÇÕES */
+section {
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+
+section h2 {
+  border-left:5px solid #ff3b3b;
+  padding-left:10px;
+}
+
+/* JOGOS */
+.games {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+
+.game {
+  background:#1c1c1c;
+  border-radius:10px;
+  padding:15px;
+}
+
+.game h3 {
+  color:#ff3b3b;
+}
+
+.tags span {
+  font-size:12px;
+  background:#333;
+  padding:4px 6px;
+  margin-right:5px;
+  border-radius:4px;
+}
+
+.game a {
+  display:block;
+  margin-top:10px;
+  text-align:center;
+  background:#ff3b3b;
+  color:#fff;
+  padding:10px;
+  border-radius:5px;
+  text-decoration:none;
+}
+</style>
 </head>
+
 <body>
 
-<div class="box">
-  <h1>⚠️ Aviso +18</h1>
-  <p>
-    Este site contém jogos com conteúdo adulto.<br>
-    O acesso é permitido apenas para maiores de 18 anos.
-  </p>
-  <p>
-    Ao clicar em <strong>Entrar</strong>, você confirma que possui 18 anos ou mais.
-  </p>
+<header>
+  <h1>SLS Studio</h1>
+  <nav>
+    <a href="#">Novos</a>
+    <a href="#">Categorias</a>
+    <a href="#">Atualizações</a>
+    <a href="termos.html">Termos</a>
+  </nav>
+</header>
 
-  <button class="enter" onclick="window.location.href='home.html'">
-    Entrar
-  </button>
+<div class="banner">
+  <h2>Jogos Adultos +18</h2>
+  <p>Baixe jogos adultos desenvolvidos por Matheus (SLS Studio)</p>
 
-  <button class="exit" onclick="window.location.href='https://www.google.com'">
-    Sair
-  </button>
+  <div class="search-box">
+    <select>
+      <option>Todas categorias</option>
+      <option>Terror</option>
+      <option>Gravidez</option>
+      <option>Aventura</option>
+      <option>Harém</option>
+      <option>Romance</option>
+      <option>Apocalipse</option>
+    </select>
+
+    <input type="text" placeholder="Pesquisar jogo...">
+
+    <button>Buscar</button>
+  </div>
 </div>
+
+<div class="categories">
+  <div class="category">Terror</div>
+  <div class="category">Gravidez</div>
+  <div class="category">Aventura</div>
+  <div class="category">Harém</div>
+  <div class="category">Romance</div>
+  <div class="category">Apocalipse</div>
+</div>
+
+<section>
+  <h2>🆕 Jogos Novos</h2>
+  <div class="games">
+    <div class="game">
+      <h3>Blairewood</h3>
+      <p>Jogo adulto focado em narrativa.</p>
+      <div class="tags">
+        <span>+18</span><span>Terror</span>
+      </div>
+      <a href="https://www.mediafire.com/file/uto6jwyyqp5rp5v/blairewood.mb-0.1-release.apk/file">Baixar APK</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🔄 Jogos Atualizados</h2>
+  <div class="games">
+    <div class="game">
+      <h3>Blairewood</h3>
+      <p>Atualizado recentemente.</p>
+      <a href="#">Ver detalhes</a>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
